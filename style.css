@@ -22,9 +22,9 @@ header h1 {
 
 /* Menú de navegación */
 nav {
-  background-color: #3f9ddb;
+  background-color: #5e91b3;
   padding: 10px;
-  text-align: center;
+  text-align: left;
 }
 
 nav a {
