@@ -7,15 +7,15 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #fdf6f0; /* color claro tipo café con leche */
+  background-color: #f0f6fd; /* color claro tipo café con leche */
   color: #333;
   line-height: 1.6;
 }
 
 /* Encabezado */
 header {
-  background-color: #6f4e37; /* café oscuro */
-  color: white;
+  background-color: #3275cd; /* café oscuro */
+  color: rgb(255, 255, 255);
   text-align: center;
   padding: 20px;
 }
@@ -26,7 +26,7 @@ header h1 {
 
 /* Menú de navegación */
 nav {
-  background-color: #8b5e3c;
+  background-color: #3f9ddb;
   padding: 10px;
   text-align: center;
 }
