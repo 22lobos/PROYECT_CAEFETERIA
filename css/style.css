@@ -75,3 +75,23 @@ footer {
   align-items: left;
 
 }
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f6fd; 
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Fondo especial solo para la página de contacto */
+body#pagina-contacto {
+    background-image: url('../imagenes/fondo-contacto.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Ajustar el contenedor para mejor legibilidad */
+body#pagina-contacto #Container {
+    background-color: rgba(255, 255, 255, 0.85);
+}
