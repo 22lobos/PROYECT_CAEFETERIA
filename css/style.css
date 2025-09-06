@@ -101,7 +101,7 @@ body#pagina-contacto #Container {
 
   .contenedor-nav {
   /* Para que los elementos hijos se organicen en una fila */
-  display: flex;
+  
   /* Centra los elementos horizontalmente */
   justify-content: center;
   /* Centra los elementos verticalmente */
