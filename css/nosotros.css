@@ -1,0 +1,179 @@
+/* -- Variables para colores y fuentes -- */
+:root {
+    --primary-bg: #80b0e6; /* Fondo principal claro */
+    --header-bg: #3f7fa6; /* Fondo del encabezado */
+    --nav-link-color: #ffffff; /* Color de los enlaces del menú */
+    --nav-link-hover: #3c376f; /* Color de los enlaces al pasar el ratón */
+    --footer-bg: #373a6f; /* Fondo del pie de página */
+    --text-dark: #333; /* Color de texto oscuro general */
+    --section-bg: #f8f6f2; /* Fondo de la sección de descripción */
+    --section-title-color: #4b3e34; /* Color del título de la sección */
+    --section-text-color: #6a5d52; /* Color del texto de la sección */
+}
+
+/* -- Estilos generales -- */
+body {
+    font-family: 'Montserrat', Arial, sans-serif; /* Usamos Montserrat de Google Fonts */
+    background-color: var(--primary-bg);
+    color: var(--text-dark);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+#Container {
+    max-width: 1200px; /* Ancho máximo del contenido para centrarlo */
+    margin: 0 auto; /* Centra el contenedor en la página */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra sutil para el contenedor */
+    background-color: #fff; /* Fondo blanco para el contenido dentro del contenedor */
+}
+
+/* -- Estilos del encabezado principal (logo y menú centrados) -- */
+.main-header {
+    background-color: var(--header-bg);
+    padding: 20px;
+    text-align: center; /* Centra el logo y el menú */
+}
+
+.main-header .logo img {
+    max-width: 180px; /* Ajusta el tamaño del logo */
+    height: auto;
+    margin-bottom: 20px; /* Espacio entre el logo y el menú */
+}
+
+/* -- Estilos del menú de navegación -- */
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centra los elementos del menú */
+    gap: 25px; /* Espacio entre los elementos del menú */
+    flex-wrap: wrap; /* Permite que el menú se envuelva en pantallas pequeñas */
+}
+
+.main-nav ul li a {
+    color: var(--nav-link-color);
+    text-decoration: none;
+    font-weight: 700; /* Negrita */
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 5px 10px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.main-nav ul li a:hover {
+    color: var(--nav-link-hover);
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo sutil al pasar el ratón */
+    border-radius: 5px;
+}
+
+/* -- Estilos de la sección "Acerca de la cafetería" (imagen y descripción) -- */
+.about-section {
+    padding: 60px 20px;
+    background-color: var(--section-bg);
+    display: flex;
+    flex-direction: column; /* La imagen y descripción se apilan por defecto */
+    align-items: center; /* Centra los elementos */
+    gap: 40px; /* Espacio entre la imagen y el texto */
+}
+
+.about-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease; /* Efecto suave al hacer hover */
+}
+
+.about-section img:hover {
+    transform: scale(1.02); /* Ligeramente más grande al pasar el ratón */
+}
+
+.description-content {
+    max-width: 800px;
+    text-align: center; /* Centra el texto */
+}
+
+.description-content h2 {
+    font-size: 2.8em;
+    color: var(--section-title-color);
+    margin-bottom: 25px;
+    position: relative;
+}
+
+/* Pequeña línea decorativa debajo del título */
+.description-content h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: var(--nav-link-hover);
+    margin: 15px auto 0;
+    border-radius: 2px;
+}
+
+.description-content p {
+    font-size: 1.1em;
+    color: var(--section-text-color);
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+/* -- Estilos del pie de página -- */
+footer {
+    background-color: var(--footer-bg);
+    color: var(--nav-link-color);
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+}
+
+/* -- Media Queries para responsividad (tabletas y móviles) -- */
+@media (min-width: 768px) {
+    .about-section {
+        flex-direction: row; /* En pantallas más grandes, la imagen y el texto van en fila */
+        text-align: left; /* Alinea el texto a la izquierda en vista de escritorio */
+        justify-content: center;
+    }
+
+    .description-content {
+        text-align: left; /* Alinea el texto a la izquierda */
+        max-width: 50%; /* Permite que el texto ocupe la mitad del espacio */
+    }
+
+    .description-content h2::after {
+        margin: 15px 0 0; /* Ajusta la posición de la línea decorativa */
+    }
+
+    .about-section img {
+        max-width: 45%; /* La imagen ocupa el 45% del espacio */
+    }
+
+    /* Intercambia el orden de la imagen y el texto en filas alternas (opcional) */
+    .about-section:nth-of-type(even) { /* Por si tienes más de una sección similar */
+        flex-direction: row-reverse;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-header .logo img {
+        max-width: 150px;
+    }
+    .main-nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .main-nav ul li a {
+        font-size: 13px;
+    }
+    .about-section {
+        padding: 40px 15px;
+    }
+    .description-content h2 {
+        font-size: 2em;
+    }
+    .description-content p {
+        font-size: 1em;
+    }
+}
