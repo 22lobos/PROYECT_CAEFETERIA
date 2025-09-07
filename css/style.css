@@ -132,7 +132,7 @@ body#pagina-contacto #Container {
 }
 
 .menu a:hover {
-  background-color: #4293e987; /* Color de fondo al pasar el mouse */
-  color: rgb(144, 192, 214); /* Color del texto al pasar el mouse */
+  background-color: #007bff; /* Color de fondo al pasar el mouse */
+  color: white; /* Color del texto al pasar el mouse */
   border-radius: 10px; /* Bordes redondeados */
 }
