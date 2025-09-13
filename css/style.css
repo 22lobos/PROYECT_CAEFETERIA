@@ -3,7 +3,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f6fd; 
+  background-color: #5fa0eb; 
   color: #333;
   line-height: 1.6;
 }
@@ -13,7 +13,7 @@ header {
   background-color: #3f7fa6; 
   color: rgb(255, 255, 255);
   text-align: center;
-  padding: 20px;
+  padding: 10px;
 }
 
 header h1 {
@@ -30,7 +30,7 @@ nav {
 nav a {
   color: white;
   text-decoration: none;
-  margin: 0 15px;
+  margin: 15px;
 }
 
 nav a:hover {
