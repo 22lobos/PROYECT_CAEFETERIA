@@ -9,12 +9,12 @@
 <body>
     <div id="Container">
         <header>
-            <img src="logo/Captura de pantalla 2025-09-02 092713.png" alt="logo" width="200">
+            <img src="img/logo.png" alt="logo" width="150">
       
-      <link rel="stylesheet" href="css/contacto.css">
-            <nav>
+      <link rel="stylesheet" href="css/style.css">
+            <nav class="menu">
               <ul>
-                <li><a href="Index.html">Inicio</a></li>
+                <li><a href="Index.html">Inicio</a></li> 
                 <li><a href="menu.html">Menú</a></li>
                 <li><a href="Contacto.html">Contacto</a></li>
                 <li><a href="Nosotros.html">Quienes Somos</a></li>
@@ -22,12 +22,51 @@
               </ul>
             </nav>
         </header>
+    </div>
 
+    <main>
+         <form action="http://mi-servidor.com" method="POST">
+<div>
+  <label for="nombre">Nombre:</label>
+  <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+</div>
+<div>
+  <label for="email">Correo:</label>
+  <input type="email" id="email" name="correo" placeholder="Tu correo">
+</div>
+<div>
+  <label>
+    <input type="checkbox" name="suscripcion">
+    Acepto recibir notificaciones
+  </label>
+</div>
+<div>
+  <label>Género:</label>
+  <label><input type="radio" name="genero" value="masculino"> Masculino</label>
+  <label><input type="radio" name="genero" value="femenino"> Femenino</label>
+  <label><input type="radio" name="genero" value="otro"> Otro</label>
+</div>
+<div>
+  <label for="comentarios">Comentarios:</label>
+  <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+</div>
+<div>
+  <label for="pais">País:</label>
+  <select id="pais" name="pais">
+    <option value="colombia">Colombia</option>
+    <option value="mexico">México</option>
+    <option value="argentina">Argentina</option>
+  </select>
+</div>
+<div>
+  <input type="submit" value="Enviar">
+</div>
+</form>
         <footer>
             <p>Derechos Reservados &copy; 2024</p>
         </footer
 
-    </div>
+   
 
 </body>
 </html>
