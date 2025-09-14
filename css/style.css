@@ -167,3 +167,8 @@ footer li {
   margin: 5px 0;
 }
 
+
+img:hover {
+  transform: scale(1.03);
+}
+
